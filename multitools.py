@@ -1,4 +1,6 @@
 import click
+from tools.speedtest import run_speedtest
+
 
 
 @click.group()
@@ -6,9 +8,7 @@ def cli():
     pass
 
 
-@cli.command()
-def hello():
-    click.echo("Hello World!")
+cli.add_command(run_speedtest, "speedtest")
 
 
 if __name__ == "__main__":
