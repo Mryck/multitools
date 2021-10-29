@@ -1,3 +1,4 @@
 click
 black
 speedtest-cli
+metno-locationforecast
